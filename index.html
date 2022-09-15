@@ -19,14 +19,14 @@
     </header>
     <main>
         <form action="" id="evaluation-form">
-            <div id="complete-name">
+            <section id="complete-name">
             <input type="text" name="name" placeholder="Nome" id="input-name">
             <input type="text" name="last-name" placeholder="Sobrenome" id="input-lastname">
-            </div>
+            </section>
 
-            <div id="email-house">
-            <input type="text" name="email" placeholder="Email" id="input-email">
+            <section id="email-house">
             <div>
+            <input type="text" name="email" placeholder="Email" id="input-email">            
             <label for="houses">Casa</label>
             <select name="houses" id="house">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -35,10 +35,25 @@
                 <option value="Pytherina" id="pytherina-house">Pytherina</option>
             </select>
             </div>
-            </div>  
+            
+            </section>  
+            <section id="label-family-container">
+              <label id="label-family">Qual sua família?</label>
+              <div id="label-family-options">
+                <input type='radio' id="label-family-1" name="family" value="Frontend">
+                <label for="label-family-1" name='label-family-option'>Frontend</label>
+              </div>
+              <div id="label-family-options">
+                <input type='radio' id="label-family-2" name="family" value="Backend">
+                <label for="label-family-2" name='label-family-option'>Backend</label>
+              </div>
+              <div id="label-family-options">
+                <input type='radio' id="label-family-3" name="family" value="FullStack">
+                <label for="label-family-3" name='label-family-option'>FullStack</label>
+              </div>
+            </section>
         </form>
-        <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo-trybewarts">
-
+        <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo-trybewarts">
     </main>
     <script src="script.js"></script>
 </body>
