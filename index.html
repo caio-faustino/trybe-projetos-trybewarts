@@ -36,6 +36,8 @@
             </div>
             
             </section>  
+          <section class="flex-container">
+
             <section id="label-family-container">
               <label id="label-family">Qual sua família?</label>
               <div id="label-family-options">
@@ -51,6 +53,83 @@
                 <label for="label-family-3" name='label-family-option'>FullStack</label>
               </div>
             </section>
+
+            <section id="label-contents">
+              <label id="label-content">Qual conteúdo você está com mais vontade de aprender?"</label>
+              <div class="label-itens">
+                <div class="label-itens-1">
+                  <input type="checkbox" name="label-item" class="subject" value="HoFs">
+                  <label for="label-item-1">HoFs</label>
+                </div>
+                <div class="label-itens-2">
+                  <input type="checkbox" name="label-item" class="subject" value="Jest">
+                  <label for="label-item-2">Jest</label>
+                </div>
+                <div class="label-itens-3">
+                  <input type="checkbox" name="label-item" class="subject" value="Promises">
+                  <label for="label-item-3">Promises</label>
+                </div>
+                <div class="label-itens-4">
+                  <input type="checkbox" name="label-item" class="subject" value="React">
+                  <label for="label-item-4">React</label>
+                </div>
+                <div class="label-itens-5">
+                  <input type="checkbox" name="label-item" class="subject" value="SQL">
+                  <label for="label-item-5">SQL</label>
+                </div>
+                <div class="label-itens-6">
+                  <input type="checkbox" name="label-item" class="subject" value="Python">
+                  <label for="label-item-6">Python</label>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section id="label-rate-container">
+            <label for="rate-option" id="label-rate">Como você avalia a Trybewarts?</label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-1">
+              <input type='radio' id="rate-option-1" value="1" name="rate">1
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-2">
+              <input type='radio' id="rate-option-2" value="2" name="rate">2
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-3">
+              <input type='radio' id="rate-option-3" value="3" name="rate">3
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-4">
+              <input type='radio' id="rate-option-4" value="4" name="rate">4
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-5">
+              <input type='radio' id="rate-option-5" value="5" name="rate">5
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-6">
+              <input type='radio' id="rate-option-6" value="6" name="rate">6
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-7">
+              <input type='radio' id="rate-option-7" value="7" name="rate">7
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-8">
+              <input type='radio' id="rate-option-8" value="8" name="rate">8
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-9">
+              <input type='radio' id="rate-option-9" value="9" name="rate">9
+            </label>
+            <label id='label-rate-options' name='label-rate-option' for="rate-option-10">
+              <input type='radio' id="rate-option-10" value="10" name="rate">10
+            </label>
+          </section>
+
+          <section id="textarea-content">
+            <div class="textarea-content-item">
+              <label class="textarea" for="abstract">Deixe seu comentário:</label>
+              <textarea name="abstract" id="textarea" style="resize: none;" maxlength="500"></textarea>
+            </div>
+          </section>
+
+          <label id="label-infos" name='agreement-label' for="checkbox">Você concorda com o uso das informações acima?
+            <input type='checkbox' id="agreement" value='yes' onchange="validateFormSubmit()">
+          </label>
+
         </form>
         <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo-trybewarts">
     </main>
