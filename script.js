@@ -26,3 +26,13 @@ function agreementValidation() {
 
 submitBtn1.addEventListener('click', validation);
 agreement.addEventListener('click', agreementValidation);
+
+function textareaLengthCheck() {
+  const textArea = document.querySelector('#textarea');
+  const counter = document.querySelector('#counter');
+  const numberChar = parseInt(counter.innerText, 10);
+  textArea.addEventListener('input', () => {
+    counter.innerText = numberChar - textArea.value.length;
+  });
+}
+textareaLengthCheck();
